@@ -12,11 +12,16 @@
     <header>
         <nav class="nav-container">
             <div class="logo">Mind & Balance</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="article.html">Articles</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+            
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -25,14 +30,14 @@
         </nav>
     </header>
 
-    <div class="page-header">
+    <div class="page-header hidden">
         <div class="container">
             <h1>About Mind & Balance</h1>
         </div>
     </div>
 
     <div class="container">
-        <div class="content-wrapper">
+        <div class="content-wrapper hidden delay-1">
             <h2>Our Mission</h2>
             <p>At Mind & Balance, we believe that understanding the human mind is the first step toward living a more fulfilling life. Our mission is to democratize psychology and mental health concepts, making them accessible, practical, and scientifically sound for our readers.</p>
             
@@ -47,7 +52,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="hidden">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">

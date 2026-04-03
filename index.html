@@ -9,14 +9,25 @@
 </head>
 <body>
 
+    <!-- Reading Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
     <header>
         <nav class="nav-container">
             <div class="logo">Mind & Balance</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="article.html">Articles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+            
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -35,51 +46,82 @@
     </section>
 
     <!-- AdSense Top Leaderboard Placeholder -->
-    <div class="ad-container ad-leaderboard"></div>
+    <div class="ad-container ad-leaderboard hidden"></div>
 
+    <!-- Interactive Mood Widget -->
+    <section class="container hidden delay-1">
+        <div class="mood-widget">
+            <h2>How are you feeling today?</h2>
+            <p>Take a moment to check in with yourself.</p>
+            <div class="mood-buttons">
+                <button class="mood-btn" data-mood="stressed">Stressed</button>
+                <button class="mood-btn" data-mood="anxious">Anxious</button>
+                <button class="mood-btn" data-mood="unmotivated">Unmotivated</button>
+                <button class="mood-btn" data-mood="okay">Okay</button>
+                <button class="mood-btn" data-mood="great">Great</button>
+            </div>
+            <div class="mood-result" id="mood-result-text"></div>
+        </div>
+    </section>
+
+    <!-- Articles Feed -->
     <div class="container section" id="articles">
-        <h2 class="section-title">Latest Insights</h2>
+        <h2 class="section-title hidden">Latest Insights</h2>
         
         <div class="articles-grid">
             <!-- Article 1 -->
-            <article class="card">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=400');"></div>
+            <article class="card hidden delay-1">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=600');"></div>
                 <div class="card-content">
                     <span class="card-category">Mental Health</span>
                     <h3 class="card-title">Understanding Anxiety in the Digital Age</h3>
                     <p class="card-excerpt">How constant connectivity impacts our nervous system and practical strategies to unplug effectively.</p>
-                    <a href="#" class="card-link">Read More &rarr;</a>
+                    <a href="article.html" class="card-link">Read More &rarr;</a>
                 </div>
             </article>
 
             <!-- Article 2 -->
-            <article class="card">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&q=80&w=400');"></div>
+            <article class="card hidden delay-2">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&q=80&w=600');"></div>
                 <div class="card-content">
                     <span class="card-category">Cognitive Psychology</span>
                     <h3 class="card-title">The Power of Reframing Thoughts</h3>
                     <p class="card-excerpt">Cognitive behavioral techniques that can shift your perspective and improve your daily mood.</p>
-                    <a href="#" class="card-link">Read More &rarr;</a>
+                    <a href="article.html" class="card-link">Read More &rarr;</a>
                 </div>
             </article>
 
             <!-- Article 3 -->
-            <article class="card">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=400');"></div>
+            <article class="card hidden delay-3">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=600');"></div>
                 <div class="card-content">
                     <span class="card-category">Wellness</span>
                     <h3 class="card-title">Mindfulness in 5 Minutes</h3>
                     <p class="card-excerpt">A simple, evidence-based guide to integrating mindfulness into a busy schedule.</p>
-                    <a href="#" class="card-link">Read More &rarr;</a>
+                    <a href="article.html" class="card-link">Read More &rarr;</a>
                 </div>
             </article>
         </div>
     </div>
 
     <!-- AdSense Bottom Leaderboard Placeholder -->
-    <div class="ad-container ad-leaderboard"></div>
+    <div class="ad-container ad-leaderboard hidden"></div>
 
-    <footer>
+    <!-- Newsletter Section -->
+    <div class="container section hidden">
+        <div class="newsletter-section">
+            <div class="newsletter-content">
+                <h2>Join Our Mindful Newsletter</h2>
+                <p>Get weekly psychological insights and evidence-based tips delivered straight to your inbox.</p>
+                <form class="newsletter-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="hidden">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
