@@ -200,24 +200,16 @@ header {
 .delay-2 { transition-delay: 200ms; }
 .delay-3 { transition-delay: 300ms; }
 
-/* AdSense Containers */
+/* AdSense Containers (Invisible until AdSense populates) */
 .ad-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--bg-secondary);
-  border: 1px dashed var(--text-secondary);
-  color: var(--text-secondary);
-  font-size: 0.9rem;
+  display: block;
   margin: 2rem 0;
-  border-radius: 8px;
   position: relative;
-  transition: var(--transition);
 }
 .ad-container::before {
-  content: 'AdSense Placeholder';
-  position: absolute;
+  content: '';
+  display: none;
 }
 .ad-leaderboard {
   max-width: 728px;
