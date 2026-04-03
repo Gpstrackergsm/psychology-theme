@@ -822,3 +822,43 @@ footer {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
+/* Cookie Banner */
+.cookie-banner {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow-hover);
+  padding: 1.5rem 2rem;
+  border-radius: var(--border-radius);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 90%;
+  width: 800px;
+  transition: opacity 0.4s ease;
+}
+
+.cookie-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.cookie-content a {
+  color: var(--primary-accent);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .cookie-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    bottom: 1rem;
+  }
+}

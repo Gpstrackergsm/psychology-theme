@@ -137,3 +137,28 @@ function initMoodWidget() {
     });
 }
 initMoodWidget();
+
+// --- Cookie Consent Banner ---
+function initCookieBanner() {
+    if (!localStorage.getItem('cookieConsent')) {
+        const bannerHTML = `
+            <div id="cookie-banner" class="cookie-banner">
+                <div class="cookie-content">
+                    <p>We use cookies and similar technologies to enhance your browsing experience, serve personalized ads, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies as described in our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+                </div>
+                <div class="cookie-buttons">
+                    <button id="accept-cookies" class="btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Accept All</button>
+                </div>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', bannerHTML);
+
+        document.getElementById('accept-cookies').addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'true');
+            const banner = document.getElementById('cookie-banner');
+            banner.style.opacity = '0';
+            setTimeout(() => banner.remove(), 400);
+        });
+    }
+}
+document.addEventListener('DOMContentLoaded', initCookieBanner);
