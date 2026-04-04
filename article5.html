@@ -65,6 +65,30 @@
     }
     </script>
     <!-- End Schema.org -->
+
+    <!-- Schema.org: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://leafanoo.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Articles", "item": "https://leafanoo.com/#articles" },
+        { "@type": "ListItem", "position": 3, "name": "Understanding Imposter Syndrome", "item": "https://leafanoo.com/article5.html" }
+      ]
+    }
+    </script>
+    <!-- Schema.org: FAQPage (triggers FAQ rich snippets in Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is Imposter Syndrome?", "acceptedAnswer": { "@type": "Answer", "text": "Imposter Syndrome is the persistent belief that you are a fraud despite clear evidence of success, causing you to attribute achievements to luck rather than ability." } },
+        { "@type": "Question", "name": "Who gets Imposter Syndrome?", "acceptedAnswer": { "@type": "Answer", "text": "Nearly 70% of people experience it. It disproportionately affects high achievers, academics, and those entering new roles or environments." } }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
