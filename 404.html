@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Mind & Balance</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <style>
+        .not-found-container {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .not-found-code {
+            font-size: 8rem;
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(135deg, var(--primary, #6a8d92), var(--accent, #c9a96e));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        .not-found-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text, #2d3436);
+        }
+        .not-found-desc {
+            font-size: 1.1rem;
+            color: var(--text-muted, #636e72);
+            max-width: 500px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.7;
+        }
+        .not-found-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .not-found-links a {
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-primary-404 {
+            background: var(--primary, #6a8d92);
+            color: white;
+        }
+        .btn-primary-404:hover { opacity: 0.85; transform: translateY(-2px); }
+        .btn-secondary-404 {
+            border: 2px solid var(--primary, #6a8d92);
+            color: var(--primary, #6a8d92);
+        }
+        .btn-secondary-404:hover { background: var(--primary, #6a8d92); color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">Mind & Balance</div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#articles">Articles</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="not-found-container">
+        <div class="not-found-code">404</div>
+        <h1 class="not-found-title">Page Not Found</h1>
+        <p class="not-found-desc">
+            The page you are looking for has moved or no longer exists. 
+            But don't worry — we have plenty of great psychology content waiting for you.
+        </p>
+        <div class="not-found-links">
+            <a href="/index.html" class="btn-primary-404">← Back to Home</a>
+            <a href="/index.html#articles" class="btn-secondary-404">Browse Articles</a>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
