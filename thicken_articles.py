@@ -93,7 +93,7 @@ ACTION_GUIDES = [
 
 AUTHOR_BIO = """
     <div class="author-bio" style="margin-top: 5rem; border-top: 2px solid var(--border-color); padding-top: 3rem; display: flex; gap: 2rem; align-items: center;">
-        <img src="https://images.unsplash.com/photo-1559839734-2b71f1536783?auto=format&fit=crop&q=80&w=200" alt="Dr. Aris" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary-accent);">
+        <img src="https://images.unsplash.com/photo-1643297654416-05795d62e39c?auto=format&fit=crop&q=80&w=200" alt="Dr. Aris" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary-accent);">
         <div>
             <h4 style="margin: 0; font-size: 1.2rem;">About Dr. Aris</h4>
             <p style="color: var(--text-secondary); margin-top: 0.5rem; line-height: 1.6;">
