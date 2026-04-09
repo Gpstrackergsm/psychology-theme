@@ -10,6 +10,7 @@ batch_9_articles = {
     161: {
         "title": "The Brain's 'Stop Eating' Switch: A Psychological Perspective",
         "category": "Health",
+        "img": "https://images.unsplash.com/photo-1512411546253-24151c727a81?auto=format&fit=crop&q=80&w=1200",
         "desc": "Discover the hidden neurological mechanisms that control appetite and why your brain might be ignoring the signal to stop eating.",
         "content": """<h2>Introduction</h2>
         <p>For decades, we believed that appetite was governed solely by hormones like leptin and ghrelin. However, new research has uncovered a 'hidden switch' in the brain that acts as the ultimate arbiter of fullness. This discovery shifts our understanding from simple biology to a complex psychological and neurological interplay.</p>
@@ -37,6 +38,7 @@ batch_9_articles = {
     162: {
         "title": "Reversing Brain Aging: The Science of the FTL1 Protein",
         "category": "Neuroscience",
+        "img": "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=1200",
         "desc": "Is it possible to turn back the clock on cognitive decline? Explore the breakthrough research on the FTL1 protein and its role in brain aging.",
         "content": """<h2>Introduction</h2>
         <p>Aging has long been considered an inevitable one-way street, especially for the brain. However, scientists have recently identified a specific protein, FTL1, that seems to accelerate the aging process. More importantly, they've found that inhibiting this protein can actually reverse some signs of cognitive decline.</p>
@@ -63,6 +65,7 @@ batch_9_articles = {
     163: {
         "title": "Inside the Overlooked Brain Cells That Control Fear and PTSD",
         "category": "Mental Health",
+        "img": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200",
         "desc": "New research suggests that astrocytes, long ignored by scientists, may be the secret key to understanding and treating PTSD and fear disorders.",
         "content": """<h2>Introduction</h2>
         <p>Fear is more than just a feeling; it is a complex neurological process. Traditionally, scientists focused on neurons as the primary drivers of fear memories. But a new player has emerged: astrocytes. These star-shaped cells are now known to actively regulate the intensity and duration of fear responses.</p>
@@ -89,6 +92,7 @@ batch_9_articles = {
     164: {
         "title": "Why Trapped Reality Matters: Decoding Schizophrenia Mutations",
         "category": "Mental Health",
+        "img": "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?auto=format&fit=crop&q=80&w=1200",
         "desc": "Genetic mutations may cause the brain to become 'trapped' in an incorrect reality. Learn the science behind schizophrenia's newest genetic clues.",
         "content": """<h2>Introduction</h2>
         <p>Schizophrenia is often characterized by a disconnection from reality. Recent studies have pointed to a specific gene mutation that essentially 'traps' the brain in a previous state, making it unable to update its understanding of the world based on new information.</p>
@@ -112,6 +116,7 @@ batch_9_articles = {
     165: {
         "title": "The Sleep Switch: How Deep Rest Boosts Brainpower and Muscle",
         "category": "Productivity",
+        "img": "https://images.unsplash.com/photo-1520206183501-b80af970d7eb?auto=format&fit=crop&q=80&w=1200",
         "desc": "Sleep isn't just for rest. It's an active hormonal state that repairs your body and sharpens your mind. Discover the science of the sleep switch.",
         "content": """<h2>Introduction</h2>
         <p>Most people view sleep as a passive state of 'turning off.' In reality, deep sleep is when the body's most powerful repair mechanisms are activated. Scientists have discovered a 'switch' in the brain that, during deep sleep, triggers a flood of growth hormones that build muscle and burn fat.</p>
@@ -135,6 +140,7 @@ batch_9_articles = {
     166: {
         "title": "What Your Teen Eats Reveals About Their Mental Health",
         "category": "Relationships",
+        "img": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1200",
         "desc": "The gut-brain connection is powerful, especially during adolescence. Learn how diet significantly impacts teen depression and anxiety.",
         "content": """<h2>Introduction</h2>
         <p>The teenage years are a volatile time for mental health. New research indicates that a primary driver of this volatility may be found in the kitchen. Diets high in ultra-processed foods are now directly linked to higher rates of depression and anxiety in adolescents.</p>
@@ -158,6 +164,7 @@ batch_9_articles = {
     167: {
         "title": "The Stroke Paradox: Why the Brain Sometimes 'Rejuvenates'",
         "category": "Neuroscience",
+        "img": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=1200",
         "desc": "After a stroke, the brain may enter a surprising state of 'hyper-plasticity.' Explore the science of how the brain tries to heal itself.",
         "content": """<h2>Introduction</h2>
         <p>A stroke is a devastating event, but it also triggers a remarkable biological response. In the aftermath of injury, the brain enters a 'plastic' state where it can rewire itself with surprising speed. In some cases, this can lead to the 'stroke paradox'—where non-damaged areas become more active and 'younger' in their connectivity signatures.</p>
@@ -181,6 +188,7 @@ batch_9_articles = {
     168: {
         "title": "Metformin’s Hidden Path: A Therapist's View on Metabolic Health",
         "category": "Health",
+        "img": "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&q=80&w=1200",
         "desc": "The world's most popular diabetes drug may have hidden benefits for the brain. Discover why it's being studied for mental health.",
         "content": """<h2>Introduction</h2>
         <p>Metformin has been used to treat diabetes for 60 years. However, new research suggests that its most significant benefits might be occurring in the brain. By reducing neuro-inflammation and improving cellular energy efficiency, Metformin may act as a potent mood stabilizer and cognitive enhancer.</p>
@@ -204,6 +212,7 @@ batch_9_articles = {
     169: {
         "title": "The Hidden Connection Between Fatherhood and Delayed Depression",
         "category": "Relationships",
+        "img": "https://images.unsplash.com/photo-1473641262803-ec5e10080644?auto=format&fit=crop&q=80&w=1200",
         "desc": "Postpartum depression isn't just for mothers. Discover why new fathers often face a 'delayed' depression risk one year after birth.",
         "content": """<h2>Introduction</h2>
         <p>We often focus on the mental health of new mothers, but fathers are also at high risk. Interestingly, paternal depression often peaks not at birth, but around the one-year mark. This 'delayed' depression is a result of long-term sleep deprivation, identity shifts, and the accumulation of stress.</p>
@@ -227,6 +236,7 @@ batch_9_articles = {
     170: {
         "title": "Ozempic and the Mind: How Weight Loss Drugs Cut Anxiety Risk",
         "category": "Mental Health",
+        "img": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=1200",
         "desc": "GLP-1 drugs like Ozempic are changing more than just waistlines. They are showing remarkable success in reducing anxiety and depression.",
         "content": """<h2>Introduction</h2>
         <p>The revolution in weight loss drugs is now reaching psychiatry. Medications like semaglutide (Ozempic) work by mimicking hormones that signal fullness, but these same hormones also influence the brain's reward and anxiety centers. Patients are reporting a surprising 'quieting' of the mind alongside weight loss.</p>
@@ -250,6 +260,7 @@ batch_9_articles = {
     171: {
         "title": "The Truth About Cannabis: Why It Might Fail Anxiety & PTSD",
         "category": "Mental Health",
+        "img": "https://images.unsplash.com/photo-1536640175698-daff1379bd44?auto=format&fit=crop&q=80&w=1200",
         "desc": "The world's largest study on medicinal cannabis has delivered a surprising result: it may not be the cure for anxiety and PTSD we thought it was.",
         "content": """<h2>Introduction</h2>
         <p>Many individuals turn to cannabis to manage anxiety or trauma. However, a major new clinical review has found that for many, cannabis may actually worsen these conditions over time. The 'relaxation' it provides is often followed by a rebound of even higher anxiety levels.</p>
@@ -273,6 +284,7 @@ batch_9_articles = {
     172: {
         "title": "Childhood Stress: The Science of Lifelong Digestive Issues",
         "category": "Health",
+        "img": "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&q=80&w=1200",
         "desc": "The stress you experienced as a child may be stored in your gut. Discover the link between early trauma and lifelong IBS and digestive health.",
         "content": """<h2>Introduction</h2>
         <p>The gut is often called the 'second brain.' New research shows that childhood stress can literally 'program' the gut to be hyper-sensitive. This leads to a higher prevalence of IBS, chronic pain, and food sensitivities in adulthood, regardless of current stress levels.</p>
@@ -296,6 +308,7 @@ batch_9_articles = {
     173: {
         "title": "Microplastics and Your Mind: What They Reveal About Alzheimer’s",
         "category": "Neuroscience",
+        "img": "https://images.unsplash.com/photo-1526951521990-620dc14c214b?auto=format&fit=crop&q=80&w=1200",
         "desc": "We are consuming a credit card's worth of plastic every week. Discover the concerning new evidence linking microplastics to brain inflammation.",
         "content": """<h2>Introduction</h2>
         <p>Microplastics are now found in every corner of the Earth, including the human brain. Recent autopsies have revealed that microplastics can cross the blood-brain barrier, leading to chronic inflammation and the premature formation of plaques associated with Alzheimer's.</p>
@@ -319,6 +332,7 @@ batch_9_articles = {
     174: {
         "title": "The Energy Problem: Why Depression Starts in Your Cells",
         "category": "Mental Health",
+        "img": "https://images.unsplash.com/photo-1530210124550-912dc1381cb8?auto=format&fit=crop&q=80&w=1200",
         "desc": "Depression might not just be a 'chemical imbalance.' It may be a failure of your brain's cellular energy production. Learn the science.",
         "content": """<h2>Introduction</h2>
         <p>For decades, we looked at serotonin as the cause of depression. But new evidence points to the mitochondria—the powerhouses of our cells. If your brain cells can't produce enough energy, your mood and cognitive function begin to collapse.</p>
@@ -342,6 +356,7 @@ batch_9_articles = {
     175: {
         "title": "Brain Scans and Ketamine: Inside the Fast Fix for Depression",
         "category": "Mental Health",
+        "img": "https://images.unsplash.com/photo-1584030373083-d2361ac95da9?auto=format&fit=crop&q=80&w=1200",
         "desc": "How does a 'party drug' lift clinical depression in hours? Brain imaging reveals the remarkable mechanics of ketamine therapy.",
         "content": """<h2>Introduction</h2>
         <p>Ketamine is revolutionized the treatment of severe depression. Unlike traditional antidepressants that take weeks to work, ketamine can lift a suicidal mood in hours. Brain scans show it works by 're-growing' the synaptic connections that depression had pruned away.</p>
@@ -365,6 +380,7 @@ batch_9_articles = {
     176: {
         "title": "Beyond Hallucinations: The Science of Non-Psychedelic 'Magic Mushrooms'",
         "category": "Neuroscience",
+        "img": "https://images.unsplash.com/photo-1466471340190-98259d5a77c0?auto=format&fit=crop&q=80&w=1200",
         "desc": "Can we get the healing benefits of psilocybin without the 'trip'? Scientists are engineering mushroom drugs that heal the mind without hallucinations.",
         "content": """<h2>Introduction</h2>
         <p>Psilocybin shows incredible promise for depression, but its psychedelic effects make it difficult to use for many people. Researchers have now developed 'non-hallucinogenic' versions of these compounds. They heal the brain's pathways without inducing a mind-bending trip.</p>
@@ -388,6 +404,7 @@ batch_9_articles = {
     177: {
         "title": "The Golden Retriever Gene: What It Reveals About Human Anxiety",
         "category": "Mental Health",
+        "img": "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=1200",
         "desc": "Why are some dogs anxious and others calm? The answer lies in genes that we share with our canine companions. Discover the science of shared anxiety.",
         "content": """<h2>Introduction</h2>
         <p>Golden Retrievers are famous for their friendly nature, yet many suffer from severe anxiety. A massive study has identified the exact genes responsible, and surprisingly, they are the same genes linked to anxiety and depression in humans. This 'shared biology' is helping us understand why some people are born more vulnerable to stress than others.</p>
@@ -411,6 +428,7 @@ batch_9_articles = {
     178: {
         "title": "The Protein of Addiction: Why the Brain Relapses into Cocaine Use",
         "category": "Mental Health",
+        "img": "https://images.unsplash.com/photo-1510832198440-a52376950479?auto=format&fit=crop&q=80&w=1200",
         "desc": "Relapse isn't a failure of willpower. It's the result of a specific protein that rewires the brain's reward system. Learn why addiction is so hard to break.",
         "content": """<h2>Introduction</h2>
         <p>Addiction is a chronic brain disease. Scientists have discovered a specific protein that becomes hyper-active after drug use, 'locking' the brain into a state of perpetual craving. This protein makes the brain ignore natural rewards (like food or social connection) in favor of the drug.</p>
@@ -434,6 +452,7 @@ batch_9_articles = {
     179: {
         "title": "Inside the Alzheimer’s Atlas: How AI is Decoding Hidden Changes",
         "category": "Neuroscience",
+        "img": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=1200",
         "desc": "AI is doing what the human eye cannot: mapping the early chemical shifts of Alzheimer's in real time. Explore the first molecular atlas of the brain.",
         "content": """<h2>Introduction</h2>
         <p>Alzheimer's has traditionally been diagnosed by the presence of plaques. But AI has recently revealed a world of 'hidden' chemical changes that occur years before plaques appear. By mapping these shifts, we are finally seeing the true early warning signs of the disease.</p>
@@ -457,6 +476,7 @@ batch_9_articles = {
     180: {
         "title": "Fear of Aging: The Science of Why Stress Speeds Up Your Biology",
         "category": "Health",
+        "img": "https://images.unsplash.com/photo-1493132630797-4c5837dec5f0?auto=format&fit=crop&q=80&w=1200",
         "desc": "Worrying about getting old might actually make you age faster. Discover the link between aging anxiety and your cellular clock.",
         "content": """<h2>Introduction</h2>
         <p>The fear of aging is reaching new heights in our youth-obsessed culture. But there is a cruel irony: the stress of fearing age actually accelerates the biological aging process. People with high 'aging anxiety' show shorter telomeres—the protective caps on our DNA.</p>
@@ -485,6 +505,7 @@ def generate_article_html(art_id, data):
     desc = data["desc"]
     cat = data["category"]
     content = data["content"]
+    img = data["img"]
     
     # FAQ Schema
     schema_items = []
@@ -521,7 +542,7 @@ def generate_article_html(art_id, data):
     <meta property="og:description" content="{desc}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://leafanoo.com/article{art_id}.html">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:image" content="{img}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{title}">
     <link rel="canonical" href="https://leafanoo.com/article{art_id}.html">
@@ -607,45 +628,82 @@ def main():
             f.write(html_content)
         print(f"Created {filepath}")
         
-        # Build Card
+        # Build Card - FIXED: No literal \\n in the code, use real newlines in the string
         new_cards_html += f'''
             <article class="card hidden delay-1">
-                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=400');"></div>
+                <div class="card-img" style="background-image: url('{data['img'].replace('w=1200', 'w=400')}');"></div>
                 <div class="card-content">
                     <span class="card-category">{data['category']}</span>
                     <h3 class="card-title">{data['title']}</h3>
                     <p class="card-excerpt">{data['desc']}...</p>
                     <a href="article{art_id}.html" class="card-link">Read More &rarr;</a>
                 </div>
-            </article>\\n'''
+            </article>
+'''
             
         # Build Sitemap
-        new_sitemap_xml += f"""    <url>\\n        <loc>https://leafanoo.com/article{art_id}.html</loc>\\n        <changefreq>monthly</changefreq>\\n        <priority>0.8</priority>\\n    </url>\\n"""
+        new_sitemap_xml += f"""    <url>
+        <loc>https://leafanoo.com/article{art_id}.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+"""
 
     # 1. Inject cards into index.html
+    # First, let's clean up existing Batch 9 cards in index.html to avoid duplicates or malformed cards
     with open(INDEX_PATH, 'r', encoding='utf-8') as f:
         idx_content = f.read()
+    
+    # Simple cleanup: remove everything from the start of the first Batch 9 article to the end of the collection if they were corrupted
+    # Or more precisely, find where they were added and replace them.
+    # Since they were added at the end of the list, we can search for them.
+    
     try:
-        # Find the last article card and inject after it
-        parts = idx_content.rsplit('<article class="card', 1)
-        if len(parts) == 2:
-            card_end = parts[1].find('</article>') + len('</article>')
-            pre = parts[0] + '<article class="card' + parts[1][:card_end]
-            post = parts[1][card_end:]
-            idx_content = pre + new_cards_html + post
-            with open(INDEX_PATH, 'w', encoding='utf-8') as f:
-                f.write(idx_content)
-            print("✅ Updated index.html with Batch 9.")
+        # Re-parse index.html to find the injection point before batch 9
+        # Assuming batch 9 starts at article161.html
+        if 'article161.html' in idx_content:
+            # Find the start of the batch 9 cards
+            parts = idx_content.split('<a href="article161.html"')
+            if len(parts) > 1:
+                # Find the start of the <article> tag containing this link
+                pre_link = parts[0].rsplit('<article class="card', 1)[0]
+                # Find the end of the last Batch 9 article (article180.html)
+                parts_post = parts[1].split('<a href="article180.html"')
+                if len(parts_post) > 1:
+                    post_link = parts_post[1].split('</article>')[1]
+                    idx_content = pre_link + new_cards_html + post_link
+            else:
+                # If splitting fails, fall back to simple injection
+                parts = idx_content.rsplit('<article class="card', 1)
+                if len(parts) == 2:
+                    card_end = parts[1].find('</article>') + len('</article>')
+                    pre = parts[0] + '<article class="card' + parts[1][:card_end]
+                    post = parts[1][card_end:]
+                    idx_content = pre + new_cards_html + post
+        else:
+             # Standard injection if not present
+             parts = idx_content.rsplit('<article class="card', 1)
+             if len(parts) == 2:
+                 card_end = parts[1].find('</article>') + len('</article>')
+                 pre = parts[0] + '<article class="card' + parts[1][:card_end]
+                 post = parts[1][card_end:]
+                 idx_content = pre + new_cards_html + post
+                 
+        with open(INDEX_PATH, 'w', encoding='utf-8') as f:
+            f.write(idx_content)
+        print("✅ Updated index.html with fixed Batch 9.")
     except Exception as e:
         print("Error index.html", e)
 
     # 2. Inject priority into sitemap.xml
+    # Cleanup sitemap as well
     with open(SITEMAP_PATH, 'r', encoding='utf-8') as f:
         sitemap = f.read()
-    sitemap = sitemap.replace('</urlset>', f'{new_sitemap_xml}</urlset>')
-    with open(SITEMAP_PATH, 'w', encoding='utf-8') as f:
-        f.write(sitemap)
-    print("✅ Updated sitemap.xml")
+    if 'article161.html' not in sitemap:
+        sitemap = sitemap.replace('</urlset>', f'{new_sitemap_xml}</urlset>')
+        with open(SITEMAP_PATH, 'w', encoding='utf-8') as f:
+            f.write(sitemap)
+        print("✅ Updated sitemap.xml")
 
 if __name__ == "__main__":
     main()
