@@ -1,5 +1,6 @@
 import json
 import os
+import re
 
 def build_hub():
     with open('neuro_articles_meta.json', 'r', encoding='utf-8') as f:
@@ -20,22 +21,11 @@ def build_hub():
 
     for a in articles:
         text = (a['title'] + " " + a['desc']).lower()
-        assigned = False
-        
-        if any(kw.lower() in text for kw in clinical_kw):
-            cats['clinical'].append(a)
-            assigned = True
-        elif any(kw.lower() in text for kw in performance_kw):
-            cats['performance'].append(a)
-            assigned = True
-        elif any(kw.lower() in text for kw in resilience_kw):
-            cats['resilience'].append(a)
-            assigned = True
-        elif any(kw.lower() in text for kw in longevity_kw):
-            cats['longevity'].append(a)
-            assigned = True
-        else:
-            cats['clinical'].append(a) # Default
+        if any(kw.lower() in text for kw in clinical_kw): cats['clinical'].append(a)
+        elif any(kw.lower() in text for kw in performance_kw): cats['performance'].append(a)
+        elif any(kw.lower() in text for kw in resilience_kw): cats['resilience'].append(a)
+        elif any(kw.lower() in text for kw in longevity_kw): cats['longevity'].append(a)
+        else: cats['clinical'].append(a)
 
     def gen_grid(article_list):
         html = ""
@@ -52,25 +42,23 @@ def build_hub():
                 </div>'''
         return html
 
-    # Read the base template
+    # Read the file
     with open('neuroscience-hub.html', 'r', encoding='utf-8') as f:
-        template = f.read()
+        content = f.read()
 
-    template = template.replace('<!-- Injected via script/manual -->', 'INJECT_HERE') # Marker
-    
-    # We need to replace specifically by ID.
-    # Actually, let's just use string replacement on a per-id basis.
-    
-    final_html = template
-    final_html = final_html.replace('<div class="hub-grid" id="clinical-grid">\n                <!-- Injected via script/manual -->\n            </div>', f'<div class="hub-grid" id="clinical-grid">{gen_grid(cats["clinical"])}</div>')
-    final_html = final_html.replace('<div class="hub-grid" id="performance-grid">\n                <!-- Injected via script/manual -->\n            </div>', f'<div class="hub-grid" id="performance-grid">{gen_grid(cats["performance"])}</div>')
-    final_html = final_html.replace('<div class="hub-grid" id="resilience-grid">\n                <!-- Injected via script/manual -->\n            </div>', f'<div class="hub-grid" id="resilience-grid">{gen_grid(cats["resilience"])}</div>')
-    final_html = final_html.replace('<div class="hub-grid" id="longevity-grid">\n                <!-- Injected via script/manual -->\n            </div>', f'<div class="hub-grid" id="longevity-grid">{gen_grid(cats["longevity"])}</div>')
+    # Robust replacement using ID blocks
+    content = re.sub(r'(<div class="hub-grid" id="clinical-grid">).*?(</div>)', r'\1' + gen_grid(cats['clinical']) + r'\2', content, flags=re.DOTALL)
+    content = re.sub(r'(<div class="hub-grid" id="performance-grid">).*?(</div>)', r'\1' + gen_grid(cats['performance']) + r'\2', content, flags=re.DOTALL)
+    content = re.sub(r'(<div class="hub-grid" id="resilience-grid">).*?(</div>)', r'\1' + gen_grid(cats['resilience']) + r'\2', content, flags=re.DOTALL)
+    content = re.sub(r'(<div class="hub-grid" id="longevity-grid">).*?(</div>)', r'\1' + gen_grid(cats['longevity']) + r'\2', content, flags=re.DOTALL)
+
+    # Clean up the literal "INJECT_HERE" text just in case
+    content = content.replace('INJECT_HERE', '')
 
     with open('neuroscience-hub.html', 'w', encoding='utf-8') as f:
-        f.write(final_html)
+        f.write(content)
     
-    print("Neuroscience Hub populated with 52 articles.")
+    print("Neuroscience Hub fixed and populated.")
 
 if __name__ == "__main__":
     build_hub()

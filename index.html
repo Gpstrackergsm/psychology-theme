@@ -155,54 +155,6 @@
             <a href="#articles" class="btn-primary">Explore Articles</a>
         </div>
 
-    <div id="load-more-container" style="text-align: center; margin: 4rem 0;">
-        <button id="load-more-btn" style="background: var(--primary-color, #3498db); color: white; border: none; padding: 1rem 3rem; font-size: 1.1rem; font-weight: bold; border-radius: 50px; cursor: pointer; transition: all 0.3s; box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);">
-            Load More Articles
-        </button>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const cards = document.querySelectorAll('.articles-grid .card');
-            const loadMoreBtn = document.getElementById('load-more-btn');
-            const itemsPerPage = 12;
-            let currentlyShown = itemsPerPage;
-
-            // Initially hide all cards beyond the first 12
-            cards.forEach((card, index) => {
-                if (index >= currentlyShown) {
-                    card.style.display = 'none';
-                }
-            });
-
-            // If we have fewer than itemsPerPage, hide the button
-            if (cards.length <= currentlyShown) {
-                if(loadMoreBtn) loadMoreBtn.style.display = 'none';
-            }
-
-            if(loadMoreBtn) {
-                loadMoreBtn.addEventListener('click', () => {
-                    const nextBatch = currentlyShown + itemsPerPage;
-                    // Show next batch
-                    cards.forEach((card, index) => {
-                        if (index >= currentlyShown && index < nextBatch) {
-                            card.style.display = 'flex'; // our cards use flexbox generally, or block
-                        }
-                    });
-                    currentlyShown = nextBatch;
-                    
-                    // Hide button if all shown
-                    if (currentlyShown >= cards.length) {
-                        loadMoreBtn.style.display = 'none';
-                    }
-                });
-            }
-        });
-    </script>
-
-    </section>
-
-    <!-- AdSense Top Leaderboard Placeholder -->
     <div class="ad-container ad-leaderboard hidden"></div>
 
     <!-- Interactive Mood Widget -->
@@ -220,52 +172,6 @@
             <div class="mood-result" id="mood-result-text"></div>
         </div>
 
-    <div id="load-more-container" style="text-align: center; margin: 4rem 0;">
-        <button id="load-more-btn" style="background: var(--primary-color, #3498db); color: white; border: none; padding: 1rem 3rem; font-size: 1.1rem; font-weight: bold; border-radius: 50px; cursor: pointer; transition: all 0.3s; box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);">
-            Load More Articles
-        </button>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const cards = document.querySelectorAll('.articles-grid .card');
-            const loadMoreBtn = document.getElementById('load-more-btn');
-            const itemsPerPage = 12;
-            let currentlyShown = itemsPerPage;
-
-            // Initially hide all cards beyond the first 12
-            cards.forEach((card, index) => {
-                if (index >= currentlyShown) {
-                    card.style.display = 'none';
-                }
-            });
-
-            // If we have fewer than itemsPerPage, hide the button
-            if (cards.length <= currentlyShown) {
-                if(loadMoreBtn) loadMoreBtn.style.display = 'none';
-            }
-
-            if(loadMoreBtn) {
-                loadMoreBtn.addEventListener('click', () => {
-                    const nextBatch = currentlyShown + itemsPerPage;
-                    // Show next batch
-                    cards.forEach((card, index) => {
-                        if (index >= currentlyShown && index < nextBatch) {
-                            card.style.display = 'flex'; // our cards use flexbox generally, or block
-                        }
-                    });
-                    currentlyShown = nextBatch;
-                    
-                    // Hide button if all shown
-                    if (currentlyShown >= cards.length) {
-                        loadMoreBtn.style.display = 'none';
-                    }
-                });
-            }
-        });
-    </script>
-
-    </section>
 
     <!-- Articles Feed -->
     <div class="container section" id="articles">
@@ -274,14 +180,14 @@
         <!-- High-SEO Topic Filter -->
         <div class="topic-filter-container hidden delay-1">
             <div class="topic-filter">
-                <a href="#articles" class="topic-tag active">All Topics</a>
-                <a href="#articles" class="topic-tag">ADHD & Focus</a>
-                <a href="#articles" class="topic-tag">Anxiety Relief</a>
-                <a href="#articles" class="topic-tag">Relationship Advice</a>
-                <a href="#articles" class="topic-tag">Neuroscience</a>
-                <a href="#articles" class="topic-tag">Trauma Healing</a>
-                <a href="#articles" class="topic-tag">Body Language</a>
-                <a href="#articles" class="topic-tag">Mental Health Hacks</a>
+                <button class="topic-tag active" data-topic="all">All Topics</button>
+                <button class="topic-tag" data-topic="ADHD & Focus">ADHD & Focus</button>
+                <button class="topic-tag" data-topic="Anxiety Relief">Anxiety Relief</button>
+                <button class="topic-tag" data-topic="Relationship Advice">Relationship Advice</button>
+                <button class="topic-tag" data-topic="Neuroscience">Neuroscience</button>
+                <button class="topic-tag" data-topic="Trauma Healing">Trauma Healing</button>
+                <button class="topic-tag" data-topic="Body Language">Body Language</button>
+                <button class="topic-tag" data-topic="Mental Health Hacks">Mental Health Hacks</button>
             </div>
         </div>
         
@@ -2770,6 +2676,12 @@
 
 
         </div>
+
+        <div id="load-more-container" style="text-align: center; margin: 4rem 0;">
+            <button id="load-more-btn" style="background: var(--primary-color, #3498db); color: white; border: none; padding: 1rem 3rem; font-size: 1.1rem; font-weight: bold; border-radius: 50px; cursor: pointer; transition: all 0.3s; box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);">
+                Load More Articles
+            </button>
+        </div>
     </div>
 
     <!-- AdSense Bottom Leaderboard Placeholder -->
@@ -2838,6 +2750,64 @@
                 localStorage.setItem("cookieConsent", "rejected");
                 document.getElementById("cookie-consent-banner").style.display = "none";
             });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const grid = document.querySelector('.articles-grid');
+            if (!grid) return;
+            const cards = Array.from(grid.querySelectorAll('.card'));
+            const filterBtns = document.querySelectorAll('.topic-tag');
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            const itemsPerPage = 12;
+            let currentFilter = 'all';
+            let currentlyShown = itemsPerPage;
+
+            function updateDisplay() {
+                const filtered = cards.filter(card => {
+                    if (currentFilter === 'all') return true;
+                    const catSpan = card.querySelector('.card-category');
+                    if (!catSpan) return false;
+                    const catText = catSpan.textContent.toLowerCase();
+                    return catText.includes(currentFilter.toLowerCase());
+                });
+
+                cards.forEach(card => {
+                    card.style.display = 'none';
+                    card.classList.remove('hidden'); // Remove the hidden class to allow display
+                });
+                
+                filtered.slice(0, currentlyShown).forEach(card => {
+                    card.style.display = 'flex';
+                });
+
+                if (loadMoreBtn) {
+                    loadMoreBtn.style.display = (currentlyShown >= filtered.length) ? 'none' : 'inline-block';
+                }
+            }
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.getAttribute('data-topic') || 'all';
+                    currentlyShown = itemsPerPage;
+                    updateDisplay();
+                    
+                    // Scroll to articles
+                    document.getElementById('articles').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', () => {
+                    currentlyShown += itemsPerPage;
+                    updateDisplay();
+                });
+            }
+
+            updateDisplay();
         });
     </script>
 </body>
