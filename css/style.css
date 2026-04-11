@@ -256,7 +256,8 @@ header {
   -webkit-backdrop-filter: blur(15px);
   padding: 4rem;
   border-radius: 24px;
-  max-width: 700px;
+  max-width: 900px;
+  width: 90%;
   box-shadow: var(--glass-shadow);
   border: 1px solid var(--glass-border);
 }
@@ -350,7 +351,7 @@ header {
 
 /* Articles Section */
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -888,5 +889,39 @@ footer {
     text-align: center;
     gap: 1rem;
     bottom: 1rem;
+  }
+}
+
+/* Ultra-Wide Optimization for High-Res Displays */
+@media screen and (min-width: 2000px) {
+  :root {
+    --border-radius: 24px;
+  }
+  
+  html {
+    font-size: 18px; /* Safe scale up */
+  }
+  
+  .container {
+    max-width: 1600px;
+  }
+  
+  .hero-content {
+    max-width: 1100px;
+    padding: 6rem;
+  }
+
+  .mood-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .topic-tag {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .articles-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on massive screens */
   }
 }
