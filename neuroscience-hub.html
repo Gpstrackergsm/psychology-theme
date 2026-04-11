@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuroscience & Cognitive Design Hub | Mind & Balance</title>
+    <meta name="description" content="The ultimate authority on brain science, neuro-plasticity, and high-performance cognitive design. Explore 50+ deep-dive research articles.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Neuroscience & Cognitive Design Hub | Mind & Balance">
+    <meta property="og:description" content="Topical authority hub for brain science and cognitive well-being.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://leafanoo.com/neuroscience-hub.html">
+    <meta property="og:image" content="https://leafanoo.com/images/neuroscience-hub-hero.png">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Neuroscience & Cognitive Design Hub",
+      "description": "A comprehensive directory of research-backed neuroscience articles.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Mind & Balance"
+      }
+    }
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6659437008463310" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --hub-accent: #3498db;
+            --hub-dark: #2c3e50;
+        }
+        .hub-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/neuroscience-hub-hero.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+        }
+        .hub-hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .hub-section {
+            padding: 4rem 0;
+        }
+        .hub-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .category-title {
+            font-size: 2.2rem;
+            color: var(--hub-dark);
+            border-bottom: 3px solid var(--hub-accent);
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        .hub-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .hub-card:hover {
+            transform: translateY(-5px);
+        }
+        .hub-card-img {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+        .hub-card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+        .hub-card-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--hub-dark);
+            line-height: 1.4;
+        }
+        .hub-card-desc {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .hub-card-link {
+            color: var(--hub-accent);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .hub-card-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .hub-hero h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">Mind &amp; Balance</div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="neuroscience-hub.html" class="active">Neuro Hub</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hub-hero">
+        <div class="container">
+            <h1>Neuroscience Authority Hub</h1>
+            <p style="font-size: 1.3rem; max-width: 700px; margin: 0 auto; opacity: 0.9;">Master the biological foundations of mental health, cognitive performance, and neurological longevity.</p>
+        </div>
+    </div>
+
+    <section class="hub-section">
+        <div class="container">
+            <h2 class="category-title">🧠 Clinical Breakthroughs</h2>
+            <div class="hub-grid" id="clinical-grid">
+                INJECT_HERE
+            </div>
+        </div>
+    </section>
+
+    <section class="hub-section" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="category-title">⚡ High-Performance Mind</h2>
+            <div class="hub-grid" id="performance-grid">
+                INJECT_HERE
+            </div>
+        </div>
+    </section>
+
+    <section class="hub-section">
+        <div class="container">
+            <h2 class="category-title">🛡️ Trauma & Resilience</h2>
+            <div class="hub-grid" id="resilience-grid">
+                INJECT_HERE
+            </div>
+        </div>
+    </section>
+
+    <section class="hub-section" style="background: var(--hub-dark); color: white;">
+        <div class="container">
+            <h2 class="category-title" style="color: white; border-color: white;">⏳ Brain Longevity</h2>
+            <div class="hub-grid" id="longevity-grid">
+                INJECT_HERE
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mind &amp; Balance. Authority Hub Edition.</p>
+            <div style="margin-top:1rem;">
+                <a href="index.html" style="color:#ccc;margin:0 10px;text-decoration:none;">Home</a>
+                <a href="privacy-policy.html" style="color:#ccc;margin:0 10px;text-decoration:none;">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const articles = [
+            // Sample for structure, we will populate this carefully
+            {file: "article207.html", title: "The FTL1 Protein & Brain Aging", desc: "How a single protein drives the aging clock of the human brain.", cat: "longevity", img: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=1200"},
+            {file: "article205.html", title: "Vagus Nerve Stimulation", desc: "Scientific protocols for regulating the autonomic nervous system.", cat: "resilience", img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200"},
+            {file: "article209.html", title: "Schizophrenia & Reality Perception", desc: "Revealing the genetic mutations that disrupt the thalami-prefrontal bridge.", cat: "clinical", img: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=1200"}
+        ];
+
+        // I will populate the full list in the final write
+    </script>
+</body>
+</html>
