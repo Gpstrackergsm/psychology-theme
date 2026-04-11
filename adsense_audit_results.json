@@ -1,0 +1,13 @@
+{
+    "total_articles": 205,
+    "average_word_count": 885,
+    "issues": {
+        "thin_content": [],
+        "missing_author": [],
+        "missing_faq": [],
+        "missing_schema": [],
+        "missing_evidence": [],
+        "missing_adsense": [],
+        "missing_disclaimer": []
+    }
+}
