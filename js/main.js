@@ -162,3 +162,34 @@ function initCookieBanner() {
     }
 }
 document.addEventListener('DOMContentLoaded', initCookieBanner);
+
+// --- Lazy-Load AdSense for Core Web Vitals Optimization ---
+function initLazyAds() {
+    const adContainers = document.querySelectorAll('.ad-container ins.adsbygoogle');
+    if ('IntersectionObserver' in window && adContainers.length > 0) {
+        let adObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Load the AdSense script if not already present
+                    if (!window.adsbygoogle_loaded) {
+                        const script = document.createElement('script');
+                        script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6659437008463310";
+                        script.async = true;
+                        script.crossOrigin = "anonymous";
+                        document.head.appendChild(script);
+                        window.adsbygoogle_loaded = true;
+                    }
+                    // Initialize the specific ad unit
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: "200px" });
+
+        adContainers.forEach(ad => adObserver.observe(ad));
+    } else {
+        // Fallback for older browsers
+        adContainers.forEach(ad => (adsbygoogle = window.adsbygoogle || []).push({}));
+    }
+}
+document.addEventListener('DOMContentLoaded', initLazyAds);
