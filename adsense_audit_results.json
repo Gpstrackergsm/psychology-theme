@@ -1,13 +1,18 @@
 {
-    "total_articles": 280,
-    "average_word_count": 1005,
+    "total_articles": 281,
+    "average_word_count": 1052,
     "issues": {
         "thin_content": [],
-        "missing_author": [],
-        "missing_faq": [],
+        "missing_author": [
+            "article281.html"
+        ],
+        "missing_faq": [
+            "article281.html"
+        ],
         "missing_schema": [],
         "missing_evidence": [
-            "article251.html"
+            "article251.html",
+            "article281.html"
         ],
         "missing_adsense": [],
         "missing_disclaimer": []

@@ -1,6 +1,18 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/article281.html", "destination": "/article281", "permanent": true },
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/about.html", "destination": "/about", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true },
+    { "source": "/privacy-policy.html", "destination": "/privacy-policy", "permanent": true },
+    { "source": "/terms.html", "destination": "/terms", "permanent": true },
+    { "source": "/neuroscience-hub.html", "destination": "/neuroscience-hub", "permanent": true },
+    { "source": "/anxiety-relief-hub.html", "destination": "/anxiety-relief-hub", "permanent": true },
+    { "source": "/behavioral-science-hub.html", "destination": "/behavioral-science-hub", "permanent": true },
+    { "source": "/editorial-process.html", "destination": "/editorial-process", "permanent": true }
+  ],
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/404.html", "status": 404 }
